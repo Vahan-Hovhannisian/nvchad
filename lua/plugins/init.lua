@@ -110,6 +110,17 @@ return {
         },
         renderer = {
           icons = {
+            glyphs = {
+              git = {
+                unstaged = "", -- Иконка для unstaged изменений (красный кружок)
+                staged = "✓", -- Иконка для staged изменений (зеленая галочка)
+                unmerged = "", -- Иконка для unmerged изменений (значок конфликта)
+                renamed = "➜", -- Иконка для переименованных файлов
+                untracked = "U", -- Иконка для untracked файлов (новые файлы)
+                deleted = "", -- Иконка для удаленных файлов
+                ignored = "◌", -- Иконка для игнорируемых файлов
+              },
+            },
             git_placement = "after",
           },
         },
@@ -123,7 +134,7 @@ return {
     opts = {
       ensure_installed = {
         "vim", "lua", "vimdoc",
-        "html", "css"
+        "html", "css", "prisma",
       },
     },
   },
