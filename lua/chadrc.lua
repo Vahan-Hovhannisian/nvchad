@@ -6,8 +6,8 @@
 local M = {}
 
 M.base46 = {
-	theme = "tokyodark",
-  transparency = true,
+	theme = "onedark",
+  -- transparency = true,
 
   theme_toggle = {
     "vscode_dark",
@@ -16,18 +16,31 @@ M.base46 = {
   },
 
 	hl_override = {
-    NvimTreeGitDirty = {fg = "purple" }
+    -- NvimTreeGitDirty = {fg = "purple" }
 		-- Comment = { italic = true },
 		-- ["@comment"] = { italic = true },
+    -- Comment = { italic = true },
+    -- ["@comment"] = { italic = true },
+    -- DiffChange = {
+    --   bg = "#464414",
+    --   fg = "none",
+    -- },
+    -- DiffAdd = {
+    --   bg = "#103507",
+    --   fg = "none",
+    -- },
+    -- DiffRemoved = {
+    --   bg = "#461414",
+    --   fg = "none",
+    -- },
 	},
 }
 
-
-M.nvdash = { load_on_startup = true }
+M.nvdash = {load_on_startup = true}
 M.ui = {
       tabufline = {
          lazyload = false
-     }
+     },
 }
 
 return M
